@@ -1,13 +1,13 @@
-🩺 Diabetes Prediction Web App
+🩺 Diabetes Prediction Web Application
 
-A machine learning-powered web application that predicts the likelihood of diabetes based on user health parameters. The system is built using FastAPI for backend services and a custom HTML/CSS frontend for user interaction.
+A machine learning–powered web application that predicts the likelihood of diabetes based on user health parameters. The system is built using FastAPI for backend services and a simple HTML/CSS frontend for user interaction.
 
-🚀 Live Features
-Predict diabetes risk using trained ML model
-Real-time API response using FastAPI
-Clean and responsive HTML/CSS UI
-Scalable backend architecture
-Lightweight and fast inference
+🚀 Features
+🔍 Predicts diabetes risk using a trained ML model
+⚡ Real-time API responses with FastAPI
+🎨 Clean and responsive HTML/CSS user interface
+🧠 Scalable and modular backend architecture
+🚀 Lightweight and fast inference system
 📊 Input Features
 
 The model uses the following health indicators:
@@ -21,74 +21,74 @@ Blood Glucose Level
 Gender (Male/Female)
 Smoking History
 🧠 Machine Learning Model
-Algorithm: Trained classification model (e.g., Logistic Regression / Random Forest / etc.)
-Preprocessing: Feature scaling & encoding
-Libraries:
+Algorithm: Classification model (e.g., Logistic Regression / Random Forest)
+Preprocessing: Feature scaling and encoding
+Libraries Used:
 NumPy
 Pandas
 Scikit-learn
-Matplotlib (for visualization during training)
+Matplotlib (for training visualization)
 🛠️ Tech Stack
 Backend: FastAPI
 Frontend: HTML, CSS
-ML Framework: Scikit-learn
 Language: Python
+ML Framework: Scikit-learn
 Data Processing: NumPy, Pandas
-
 📁 Project Structure
 DIABETES_PREDICTION/
 │
-├── app/                          
-│   ├── static/                  
-│   ├── templates/               
-│   ├── app_ui.py                
-│   ├── features.py              
-│   ├── main.py                  
-│   ├── model_loader.py          
-│   ├── predict.py               
-│   └── schemas.py              
+├── app/
+│   ├── static/
+│   ├── templates/
+│   ├── app_ui.py
+│   ├── features.py
+│   ├── main.py
+│   ├── model_loader.py
+│   ├── predict.py
+│   └── schemas.py
 │
-├── data/                         
+├── data/
 │   └── diabetes_prediction_dataset.csv
 │
-├── model/                        
-│   ├── features.pkl             
-│   ├── model.pkl                
-│   ├── preprocess.py            
-│   ├── scaler.pkl               
-│   ├── train.py                 
-│   └── test.ipynb               
+├── model/
+│   ├── features.pkl
+│   ├── model.pkl
+│   ├── preprocess.py
+│   ├── scaler.pkl
+│   ├── train.py
+│   └── test.ipynb
 │
-├── notebooks/                    
+├── notebooks/
 │   └── diabetes_prediction_model.ipynb
 │
-├── requirements.txt              
-├── README.md                     
-└── .gitignore                    
-
-
-⚙️ How to Run Locally
-1. Clone the repository
+├── requirements.txt
+├── README.md
+└── .gitignore
+⚙️ Installation & Setup
+1. Clone the Repository
 git clone https://github.com/ZayanAhmadGhous/diabetes-prediction-app.git
 cd diabetes-prediction-app
-2. Create virtual environment
+2. Create Virtual Environment
 python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-3. Install dependencies
+
+Activate it:
+
+Linux / Mac:
+source venv/bin/activate
+Windows:
+venv\Scripts\activate
+3. Install Dependencies
 pip install -r requirements.txt
-4. Run FastAPI server
+4. Run the FastAPI Server
 uvicorn main:app --reload
-5. Open in browser
+5. Open in Browser
 http://127.0.0.1:8000
-📌 API Endpoints
+📡 API Endpoints
 🔹 Home
 GET /
-🔹 Prediction
+🔹 Predict Diabetes Risk
 POST /predict
-
-Request Example:
-
+Request Example
 {
   "age": 45,
   "hypertension": 1,
@@ -99,20 +99,16 @@ Request Example:
   "gender": "Male",
   "smoking_history": "former"
 }
-
-Response:
-
+Response Example
 {
   "prediction": "0"
 }
-
 📈 Future Improvements
-Add authentication system
-Deploy on cloud (huggingFace)
-Improve model accuracy with ensemble learning
-Adding Dockers
-
+🔐 Add authentication system
+☁️ Deploy on cloud platforms (e.g., Hugging Face / AWS)
+🧠 Improve accuracy using ensemble learning
+🐳 Add Docker containerization support
 👨‍💻 Author
 
-Developed by Zayan Ahmad Ghous
+Zayan Ahmad Ghous
 Machine Learning & MLOps Enthusiast
